@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    margin: 0;
+    /* Shisha effekti sezilishi uchun gradient fon */
+    background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #312e81 100%);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    align-content: center;
+}
+
+.con {
+    color: #ffffff;
+    width: 380px;
+    height: 540px;
+    /* Shaffof shisha rang */
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
+    border-radius: 20px;
+    transition: 0.6s;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.con:hover {
+    background: rgba(255, 255, 255, 0.12);
+    border-color: rgba(255, 255, 255, 0.35);
+    box-shadow: 0 12px 40px rgba(99, 102, 241, 0.35);
+    transform: scale(1.016);
+}
+
+.rasm {
+    margin-top: 40px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    /* Rasm atrofiga shaffof hoshiya */
+    border: 3px solid rgba(255, 255, 255, 0.25);
+    padding: 3px;
+}
+
+img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+a {
+    display: flex;
+}
+
+button {
+    width: 300px;
+    height: 40px;
+    border-radius: 12px;
+    /* Tugmalarni ham shaffof qilish */
+    background: rgba(255, 255, 255, 0.14);
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    backdrop-filter: blur(8px);
+    outline: none;
+    font-size: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: 0.6s;
+}
+
+button:hover {
+    background: rgba(255, 255, 255, 0.28);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+    transform: scale(1.018);
+}
